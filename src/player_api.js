@@ -20,7 +20,7 @@ if (!SV) {
                 var players = SV.utils.getElementsByClassName('sproutvideo-player');
                 var len = players.length;
                 for (var i = 0; i < len; i++) {
-                    if (players[i].src.indexOf(id)) {
+                    if (players[i].src.indexOf(id) > -1) {
                         return players[i];
                     }
                 }
